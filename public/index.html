@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users management app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Users management app</h1>
+            <p>View our dashboard, from the db</p>
+        </header>
+
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number" id="totalUsers">0</div>
+                <div class="label">Total Users</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="number" id="avgAge">0</div>
+                <div class="label">Average Age</div>
+            </div>
+        </div>
+
+        <!-- a form to add new user -->
+        <form id="addUserForm">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <button>Add User</button>
+        </form>
+
+        <div class="grid" id="usersGrid">
+            <!-- innerHTML -->
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>
