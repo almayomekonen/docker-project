@@ -36,10 +36,6 @@ if(!process.env.JWT_SECRET) {
   process.exit(1);
 }
 
-app.get("/", (req, res) => {
-  res.send("Welcome to our users management app 🧑🏽‍💻");
-});
-
 app.get("/health", (req, res) => {
  const dbStates = ["connected", "disconnected", "connecting", "disconnecting"];
  const dbConnected = mongoose.connection.readyState === 1;
